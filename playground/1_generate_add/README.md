@@ -35,3 +35,8 @@ declare i32 @printf(ptr, ...)
 ```
 
 
+# Practice
+
+See if you can make it work with multiply :) 
+
+And what about division?
