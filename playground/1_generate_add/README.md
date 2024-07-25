@@ -22,6 +22,7 @@ cmake -S . -B build && cmake --build build \
 ; ModuleID = 'top'
 source_filename = "top"
 
+; Declare the string constant as a global constant  
 @0 = private unnamed_addr constant [10 x i8] c"Sum : %f\0A\00", align 1
 
 define i32 @main() {

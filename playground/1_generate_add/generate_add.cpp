@@ -38,7 +38,8 @@ int main() {
   auto M = std::unique_ptr<Module>(new Module("top", Context));
 
   // Create the main function: int main() { ... }
-  FunctionType *FT = FunctionType::get(Type::getInt32Ty(Context), false);
+  FunctionType *FT =
+      FunctionType::get(Type::getInt32Ty(M->getContext()), false);
   Function *F =
       Function::Create(FT, Function::ExternalLinkage, "main", M.get());
   BasicBlock *BB = BasicBlock::Create(Context, "entry", F);
